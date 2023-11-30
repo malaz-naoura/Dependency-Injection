@@ -1,4 +1,4 @@
-package com.mezo.trainin;
+package com.mezo.trainin.Controllers;
 
 import org.springframework.stereotype.Controller;
 
