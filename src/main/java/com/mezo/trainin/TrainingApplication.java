@@ -1,9 +1,6 @@
 package com.mezo.trainin;
 
-import com.mezo.trainin.Controllers.ConstructorInjectionController;
-import com.mezo.trainin.Controllers.MyController;
-import com.mezo.trainin.Controllers.PropertyInjectionController;
-import com.mezo.trainin.Controllers.SetterInjectionController;
+import com.mezo.trainin.Controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -30,6 +27,10 @@ public class TrainingApplication {
         ConstructorInjectionController constructorInjectionController = (ConstructorInjectionController) ctx.getBean("constructorInjectionController");
         System.out.print("constructor : ");
         constructorInjectionController.sayHello();
+
+        I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+        i18nController.sayHello();
+
     }
 
 }
