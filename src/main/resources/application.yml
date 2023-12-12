@@ -1,4 +1,19 @@
+#Active profile from yml file instead of application.properties line 1
+spring:
+  profiles:
+    active: EN
+
 mezo:
   jms:
     username: malaz_with_jms
     pass: malazPass_with_jms
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "EN"
+mezo:
+  jms:
+    username: malaz_with_jms_english
+    pass: malazPass_with_jms_english
