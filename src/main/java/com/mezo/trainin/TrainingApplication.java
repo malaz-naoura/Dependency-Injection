@@ -1,6 +1,8 @@
 package com.mezo.trainin;
 
 import com.mezo.trainin.Controllers.*;
+import com.mezo.trainin.dataSource.FakeDataSource;
+import com.mezo.trainin.dataSource.FakeJms;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -31,6 +33,14 @@ public class TrainingApplication {
         I18nController i18nController = (I18nController) ctx.getBean("i18nController");
         i18nController.sayHello();
 
+        System.out.println("********************************************************************");
+        System.out.println("***************************Property Config *************************");
+        System.out.println("********************************************************************");
+
+        FakeDataSource fakeDataSource=ctx.getBean(FakeDataSource.class);
+        FakeJms fakeJms =ctx.getBean(FakeJms.class);
+        System.out.println(fakeDataSource);
+        System.out.println(fakeJms);
     }
 
 }
