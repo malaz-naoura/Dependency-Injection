@@ -1,0 +1,4 @@
+mezo:
+  jms:
+    username: malaz_with_jms
+    pass: malazPass_with_jms
