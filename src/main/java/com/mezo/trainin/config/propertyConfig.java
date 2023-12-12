@@ -16,10 +16,10 @@ import org.springframework.core.env.Environment;
 // Option 1:
 //@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
 // Option 2:
-@PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jms.properties")
-})
+//@PropertySources({
+//        @PropertySource("classpath:datasource.properties"),
+//        @PropertySource("classpath:jms.properties")
+//})
 
 public class propertyConfig {
 
