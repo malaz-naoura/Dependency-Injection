@@ -21,7 +21,7 @@ public class propertyConfig {
 
     @Bean
     FakeDataSource getDatasource(){
-        return new FakeDataSource(env.getProperty("MEZO_USERNAME"),env.getProperty("MEZO_PASS"),url);
+        return new FakeDataSource(env.getProperty("MEZO_DATASOURCE_USERNAME"),env.getProperty("MEZO_DATASOURCE_PASS"),url);
     }
 
 
